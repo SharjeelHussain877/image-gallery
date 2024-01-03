@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Noto+Sans&family=PT+Serif&family=Poppins:wght@300;400&family=Roboto+Mono&display=swap");
+
+/*
+All importing fonts of google.
+
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#filter-controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+@media (max-width: 640px) {
+  #filter-controls {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+#filter {
+  font-family: "Jost", sans-serif;
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image {
+  cursor: pointer;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+  transform: scale(1);
+  transition: all 0.2s linear;
+}
+.image:hover {
+  box-shadow: 5px 5px 2px rgb(158, 158, 158);
+  transform: scale(1.02);
+}
+
+#pagination {
+  margin: 20px 0;
+}
+
+#search,
+#search-button {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+}
+#search {
+  border: 1px solid rgb(30, 30, 156);
+}
+#search-button {
+  background-color: rgb(31, 31, 156);
+  color: #fff;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  transition: all 0.2s linear;
+}
+
+#search-button:hover {
+  color: rgb(31, 31, 156);
+  background-color: white;
+}
+
+#pagination {
+  letter-spacing: 10px;
+}
